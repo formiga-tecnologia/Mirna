@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
     }
+body{
+    overflow-x: hidden;
+}
 /* Estilos de Cores e background */
 
 /* Estilos de menus */
@@ -9,6 +12,7 @@
     position: fixed;
     height: 3vh;
     width: 100%;
+    z-index: 90;
 }
 .menubar ul li{
     float: left;
