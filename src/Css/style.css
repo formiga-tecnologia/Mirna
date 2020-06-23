@@ -2,14 +2,25 @@
     background-color: limegreen;
     position: relative;
     top: 10vh;
-    height: 50vh;
+    height: 60vh;
+    background-image: url("https://www.costdrivers.com/wp-content/uploads/2019/06/data-science-1280x640.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 80%;
 }
 #articleBanner{
     position: relative;
     top: 30vh;
     left: 10vh;
-    color: green;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-
+}
+.contentObject{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:35vh;
+    left: 10vh;
+    text-align: center;
 }
