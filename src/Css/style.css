@@ -1,8 +1,13 @@
+#menu{
+    -webkit-box-shadow: 2px 13px 19px -2px rgba(0,0,0,0.85);
+    -moz-box-shadow: 2px 13px 19px -2px rgba(0,0,0,0.85);
+    box-shadow: 2px 13px 19px -2px rgba(0,0,0,0.85);
+}
 #banner{
     background-color: limegreen;
     position: relative;
     top: 10vh;
-    height: 60vh;
+    height: 90vh;
     background-image: url("https://www.costdrivers.com/wp-content/uploads/2019/06/data-science-1280x640.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -10,8 +15,7 @@
 }
 #articleBanner{
     position: relative;
-    top: 30vh;
-    
+    top: 60vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -22,7 +26,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    top:35vh;
+    top:64vh;
     left: 70vh;
     text-align: center;
 }
