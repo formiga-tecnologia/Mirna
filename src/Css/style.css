@@ -11,9 +11,11 @@
 #articleBanner{
     position: relative;
     top: 30vh;
-    left: 10vh;
+    
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .contentObject{
@@ -21,6 +23,6 @@
     flex-direction: row;
     position: relative;
     top:35vh;
-    left: 10vh;
+    left: 70vh;
     text-align: center;
 }
