@@ -30,3 +30,7 @@
     left: 70vh;
     text-align: center;
 }
+#logo{
+    position: relative;
+    top:-4vh;
+}
