@@ -26,23 +26,63 @@
     list-style: none;
     margin-left: 1vh;
     margin-top: -5vh;
-    color: white;
+    color: #b98ac2;
     font-size: 3vh;
     font-family: 'Montserrat', sans-serif;
 }
+#responsiveMenu{
+    display: none;
+}
+        /* Estilos de menus  (Responsivo)*/
+@media screen and (max-width:600px){
+    .menubar{
+        position: fixed;
+        background-color: #73018a;
+        width: 100%;
+        height: 10vh;
+        z-index: 90;
+    }
+    .menubar img{
+        top: 0vh;
+        position: relative;
+        left: 0vh;
+        height: 8vh;
+        width: 8vh;
+    }
+    .menubar ul li{
+        float: left;
+        display: none;
+        padding: 2vh;
+        list-style: none;
+        margin-left: 1vh;
+        margin-top: -5vh;
+        color: #b98ac2;
+        font-size: 3vh;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #responsiveMenu{
+        visibility: visible;
+        position: relative;
+        margin-top: -6vh;
+        margin-left: 12vh;
+        display: block;
+    }
+}
+
+
 /*Body content*/
 body{
     overflow-x: hidden;
 }
 
-/*Body content*/
+/*Bt content*/
 .bt-standart-litle{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-weight: bolder;
-    border: 0.2vh solid white;
+    border: 0.2vh solid #b98ac2;
     font-family: 'Montserrat', sans-serif;
     height: 2vh;
     width: 15vh;
@@ -50,12 +90,12 @@ body{
     padding-top: 2vh;
 }
 .bt-standart-litle a{
-    color: white;
+    color: #b98ac2;
     text-decoration: none;
     text-align: center;
 }
 .bt-standart-litle:hover{
-    background-color: green
+    background-color: #41084d
 }
 .bt-standart{
     position: relative;
@@ -63,7 +103,7 @@ body{
     flex-direction: row;
     justify-content: center;
     font-weight: bolder;
-    border: 0.2vh solid white;
+    border: 0.2vh solid #b98ac2;
     font-family: 'Montserrat', sans-serif;
     height: 6vh;
     width: 30vh;
@@ -72,11 +112,21 @@ body{
 }
 .bt-standart a{
     position: relative;
-    color: white;
+    color: #f0a4ff;
     text-decoration: none;
     text-align: center;
     top: 1vh;
 }
 .bt-standart:hover{
-    background-color: green
+    background-color: #41084d
+}
+        /*Bt content (Responsivo)*/
+@media screen and (max-width:600px){
+    .bt-standart-litle{
+        position: relative;
+        margin-top: -4vh;
+    }
+    #responsiveMenu{
+        display: block;
+    }
 }
