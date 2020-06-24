@@ -130,3 +130,24 @@ body{
         display: block;
     }
 }
+/*amostras*/
+.viewsHorizontal{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vh;
+}
+.viewsHorizontalItem{
+    transition: 1s;
+    background-color: #2b2e3b;
+    color: #90eaed;
+    margin-left: 4vh;
+    width: 40vh;
+    font-family: 'Montserrat', sans-serif;
+    padding: 4vh;
+    border-radius: 1vh;
+}
+.viewsHorizontalItem:hover{
+    transition: 1s;
+    width: 70vh;
+}

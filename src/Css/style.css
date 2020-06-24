@@ -1,7 +1,21 @@
-#menu{
-    -webkit-box-shadow: 2px 13px 19px -2px rgba(0,0,0,0.85);
-    -moz-box-shadow: 2px 13px 19px -2px rgba(0,0,0,0.85);
-    box-shadow: 2px 13px 19px -2px rgba(0,0,0,0.85);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#Modelos{
+    position: relative;
+    top: 90px;
+}
+#ModelosTitle{
+    transition: 1s;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vh;
+    color:#b98ac2;
+}
+#ModelosTitle:hover{
+    transition: 1s;
+    text-decoration: underline;
 }
 
 #banner{
