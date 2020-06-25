@@ -157,7 +157,12 @@ body{
 }
         /*amostras (Responsivo)*/
         @media screen and (max-width:600px){
+            .viewsHorizontal{
+                display: flex;
+                flex-direction: column;
+            }
             .viewsHorizontalItem{
-                
+                margin-top: 4vh;
+                margin-left: 16vh;
             }
         }
