@@ -96,6 +96,11 @@ footer{
     color: #b98ac2;
     list-style: none;
 }
+#posArt{
+    position: relative;
+    top:30vh;
+    left: -15vh;
+}
 /*Responsive*/
 @media screen and (max-width:600px){
     #articleBanner{
@@ -112,5 +117,9 @@ footer{
     }
     #Modelos{
         top: -30vh;
+    }
+    footer{
+        top: 100vh;
+        height: 60vh
     }
 }

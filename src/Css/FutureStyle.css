@@ -179,6 +179,30 @@ body{
     font-family: 'Montserrat', sans-serif;
     padding: 2vh;
 }
+.articleBody{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #b98ac2;
+    font-family: 'Montserrat', sans-serif;
+    width: 90vh;
+}
+.articleImgMedium{
+    margin: auto;
+    top: 4vh;
+    padding: 4vh;
+    
+}
+.articleText h1{
+    font-weight: bold;
+}
+.articleText{
+    width: 40vh;
+    text-align: center;
+    padding: 6vh;
+}
         /*amostras (Responsivo)*/
         @media screen and (max-width:600px){
             .ArticleTypeCenter{
