@@ -166,3 +166,25 @@ body{
                 margin-left: 16vh;
             }
         }
+/*Artigos*/
+.ArticleTypeCenter{
+    text-align: center;
+    color: #b98ac2;
+    font-family: 'Montserrat', sans-serif;
+    width: 140vh;
+    margin: auto;
+}
+.ArticleTypeCenter h1{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2vh;
+}
+        /*amostras (Responsivo)*/
+        @media screen and (max-width:600px){
+            .ArticleTypeCenter{
+                width: 70vh;
+                position: relative;
+                top: -90vh;
+                margin-top: -40vh;
+            }
+        }
