@@ -129,6 +129,10 @@ body{
     #responsiveMenu{
         display: block;
     }
+    .bt-standart{
+        height: 4vh;
+        width: 20vh;
+    }
 }
 /*amostras*/
 .viewsHorizontal{
@@ -151,3 +155,9 @@ body{
     transition: 1s;
     width: 70vh;
 }
+        /*amostras (Responsivo)*/
+        @media screen and (max-width:600px){
+            .viewsHorizontalItem{
+                
+            }
+        }

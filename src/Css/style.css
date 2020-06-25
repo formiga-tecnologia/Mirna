@@ -48,3 +48,25 @@
     position: relative;
     top:-4vh;
 }
+
+/*Responsive*/
+@media screen and (max-width:600px){
+    #banner{
+        
+    }
+    #articleBanner{
+        top:10vh;
+        font-size: 2vh;
+        font-weight:normal;
+    }
+    .contentObject{
+        top:12vh;
+        left: 10vh;
+    }
+    #ModelosTitle{
+        top: -36vh;
+    }
+    #Modelos{
+        top: -30vh;
+    }
+}
