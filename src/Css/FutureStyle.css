@@ -203,6 +203,19 @@ body{
     text-align: center;
     padding: 6vh;
 }
+
+.articleTextRow{
+    display: flex;
+    flex-direction: row;
+    width: 40vh;
+    text-align: center;
+    padding: 6vh;
+    left: 6vh;
+}
+.articleTextRow h1{
+    font-weight: bold;
+}
+
         /*amostras (Responsivo)*/
         @media screen and (max-width:600px){
             .ArticleTypeCenter{
@@ -211,4 +224,16 @@ body{
                 top: -90vh;
                 margin-top: -40vh;
             }
+            .articleBody{
+                flex-direction: column;
+                margin: auto;
+            }
         }
+
+/*Section */
+.sectionArea{
+    border-top: 0.3vh solid #e47ef8;
+    background-color: #f0b8fc;
+    margin: auto;
+    width: 100%;
+}

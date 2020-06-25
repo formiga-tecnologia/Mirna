@@ -54,7 +54,6 @@
 
 footer{
     position: relative;
-    top: 50vh;
     margin-bottom: -90vh;
     left: 0;
     width: 100%;
@@ -101,6 +100,24 @@ footer{
     top:30vh;
     left: -15vh;
 }
+#starter{
+    margin-top: 30vh;
+    height: 80vh;
+}
+#art2{
+    top: 4vh;
+    color: #74547a;
+}
+#art3{
+    top: 4vh;
+    color: #74547a;
+    float: left;
+    text-align: left;
+}
+#imgArt01{
+    left: 10vh;
+    padding: 2vh;
+}
 /*Responsive*/
 @media screen and (max-width:600px){
     #articleBanner{
@@ -121,5 +138,13 @@ footer{
     footer{
         top: 100vh;
         height: 60vh
+    }
+    #posArt{
+        position: relative;
+        top:30vh;
+        left: 15vh;
+    }
+    #art2{
+        top:40vh
     }
 }
