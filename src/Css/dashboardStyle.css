@@ -27,12 +27,14 @@
 #dashTable {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 100vh;
+    text-align: center;
   }
   
   #dashTable td, #dashTable th {
     border: 1px solid #ddd;
     padding: 8px;
+    
   }
   
   #dashTable tr:nth-child(even){background-color: #f2f2f2;}
