@@ -9,6 +9,22 @@
     color:#bcf5bc
 }
 
+/*MenuBar*/
+.bartool{
+    position: fixed;
+    background-color: #680b7a;
+     width: 100%;
+     height: 10vh;
+     top: 10vh;
+     z-index: 90;
+}
+.bartool ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 2vh;
+    overflow: hidden;
+    float: left;
+}
 /* Estilos de menus */
 .menubar{
     position: fixed;
