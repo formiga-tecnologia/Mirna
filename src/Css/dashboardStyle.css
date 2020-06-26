@@ -1,4 +1,6 @@
-
+*:focus {
+    outline: none;
+}
 /*DashBoard Styles*/
 .dashSheet{
     position: relative;
@@ -11,6 +13,17 @@
     border-radius: 1vh;
     overflow: auto;
 }
+.dashSheet input{
+    border-style: none;
+    background-color: #f2f2f2;
+    border-width: 0;
+}
+.dashSheet input :hover{
+    border-style: none;
+    background-color: #ddd;
+    border-width: 0;
+    outline: none;
+}
 
 .dashColum ul li{
     display: block;
@@ -22,7 +35,6 @@
     background-color: gray;
     font-family: 'Montserrat', sans-serif;
 }
-
 
 #dashTable {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -38,8 +50,6 @@
   }
   
   #dashTable tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #dashTable tr:hover {background-color: #ddd;}
   
   #dashTable th {
     padding-top: 12px;
