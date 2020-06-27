@@ -5,7 +5,7 @@ function AddNewColumn(){
     let elementTodreate=document.createElement('div')
     let elementAppend = document.getElementById("bodyModal")
     if(fristUse==true){
-
+        element=document.getElementById("addColumn01")
         element.style.visibility="hidden"
         elementTodreate.classList+="addnewColumn"
         elementTodreate.id="addColumn"+idCol
@@ -45,6 +45,18 @@ function AddNewColumn(){
         elementTodreate.addEventListener("click",AddNewColumn,false)
         fristUse=false
         idCol+=1
+    }
+}
+
+function clearDash(){
+    let getClass
+    for (let index = 0; index < idCol; index++) {
+        getClass = document.getElementById("addColumn"+index)
+        document.getElementById("addColumn01").style.visibility="visible"
+        document.getElementById("addColumn01").addEventListener("click",AddNewColumn,false)
+        fristUse=true
+        getClass.remove()
+        //getClass = document.getElementById("addColumn"+idCol)
     }
 }
 

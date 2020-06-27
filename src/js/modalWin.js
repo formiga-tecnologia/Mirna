@@ -9,6 +9,7 @@ btn.onclick = function() {
 }
 span.onclick = function() {
   modal.style.display = "none";
+  clearDash()
   document.body.style.overflowY="visible"
 }
 window.onclick = function(event) {
