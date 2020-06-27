@@ -71,6 +71,7 @@ function AddTable(){
         AddColumns(document.getElementById("inputTable"+index).value)
     }
     AddLines("RowId")
+    AppendLines+=1
     modal.style.display = "none";
     document.body.style.overflowY="visible"
     clearDash()
@@ -90,8 +91,13 @@ function clearDash(){
 }
 
 function addNewLine(){
-    AppendLines+=1
-    AddLines("RowId"+AppendLines)
+    if(AppendLines>=1){
+        AddLines("RowId"+AppendLines)
+        AppendLines+=1
+    }
+    else{
+        alert("Adicione uma Tabela para adicionar linhas")
+    }
 }
 
 element.addEventListener("click",AddNewColumn,false)

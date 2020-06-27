@@ -140,3 +140,39 @@ footer{
     color: #53285c;
     font-family: 'Montserrat', sans-serif;
 }
+
+#models{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+.ModelOption_Bt{
+    position: relative;
+    left: 4vh;
+    padding-left: 4vh;
+    margin: auto;
+    float: right;
+    height: 10vh;
+    width: 60vh;
+    text-align: center;
+    padding: 4vh;
+    background-color: #53285c;
+    color: #b98ac2;
+}
+#modeloVazio_bt{
+    color: #b98ac2;
+    text-decoration: none;
+}
+#Md01{
+    left: 2vh;
+}
+#Md02{
+    left: 4vh;
+}
+#Md03{
+    left: 6vh;
+}
+#Md04{
+    left: 8vh;
+}

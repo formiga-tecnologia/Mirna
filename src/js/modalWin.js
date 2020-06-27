@@ -12,9 +12,24 @@ span.onclick = function() {
   clearDash()
   document.body.style.overflowY="visible"
 }
+function NewModelClose(){
+  modal=document.getElementById("SelectModel")
+  modal.style.display = "none";
+  clearDash()
+  document.body.style.overflowY="visible"
+}
+function NewmodelSell(){
+  modal=document.getElementById("SelectModel")
+  modal.style.display = "none";
+  clearDash()
+  //Add new  models to set//
+  document.body.style.overflowY="visible"
+}
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     document.body.style.overflowY="visible"
   }
 }
+document.getElementById("modeloVazio_bt").addEventListener("click",NewModelClose,false)
+document.getElementById("modeloVendas_bt").addEventListener("click",NewmodelSell,false)
