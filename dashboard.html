@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src\Css\FutureStyle.css" rel="stylesheet">
     <link href="src\Css\dashboardStyle.css" rel="stylesheet">
+    <link href="src\Css\modal.css" rel="stylesheet">
     <link rel="icon" type="image/png"
         href="https://gamepedia.cursecdn.com/minecraft_gamepedia/thumb/6/68/Iron_Pickaxe_JE2_BE2.png/150px-Iron_Pickaxe_JE2_BE2.png?version=3f5ed2c3e688d321f66993911b29d1e4" />
 
@@ -26,6 +27,7 @@
     </nav>
     <nav class="bartool">
         <ul>
+            <li><a id="newTable" href="#"><img src="src\img\tableNew.svg" height="50vh" width="50vh"></a></li>
             <li><a href="#"><img src="src\img\table.svg" height="50vh" width="50vh"></a></li>
             <li><a href="#"><img src="src\img\database.svg" height="50vh" width="50vh"></a></li>
             <li><a href="#"><img src="src\img\addColum.svg" height="50vh" width="50vh"></a></li>
@@ -41,7 +43,33 @@
             </tr>
         </table>
     </div>
+
+    <!--Modals Page-->
+
+    <div id="NewTable" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Criar Nova tabela</h1> <br>
+            <h3>Escolha as colunas, os campos e crie uma nova tabela para o seu projeto</h3>
+            <div class="bodyModal" id=bodyModal>
+                <p>Adicionar Nova Coluna</p><br>
+                <div class="addnewColumn">
+                    <label>Nome da coluna: </label>
+                    <input id="MainColumn">
+                    <button id="addColumn01" class="btAddTable"></button>
+                </div>
+            </div>
+            <div class="bt-standart">Criar Tabela</div>
+        </div>
+
+    </div>
+
+
+
     <script src="src\js\DashBoard.js"></script>
+    <script src="src\js\modalWin.js"></script>
+    <script src="src\js\tableFunctions.js"></script>
     <script>
         AddColumns("Codigo")
         AddColumns("Produto")

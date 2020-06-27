@@ -106,3 +106,26 @@ footer{
     color: #b98ac2;
     list-style: none;
 }
+
+/*Modal Styles*/
+    /*Add New Table*/
+.addnewColumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btAddTable{
+    width: 6vh;
+    height: 6vh;
+	background-color:#b98ac2;
+	border:0px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+    text-decoration:none;
+    background: url(https://img.icons8.com/fluent/48/000000/plus-2-math.png)
+}
