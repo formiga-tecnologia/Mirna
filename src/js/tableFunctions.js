@@ -1,6 +1,7 @@
 var element=document.getElementById("addColumn01")
 var fristUse=true
 var idCol=0
+var createdCol=0
 function AddNewColumn(){
     let elementTodreate=document.createElement('div')
     let elementAppend = document.getElementById("bodyModal")
@@ -15,6 +16,7 @@ function AddNewColumn(){
         elementAppend.appendChild(elementTodreate)        
         elementTodreate.innerHTML+="Nome da Coluna: "
         elementTodreate=document.createElement('input')
+        elementTodreate.id="inputTable"+idCol
         elementAppend.appendChild(elementTodreate)
         elementTodreate=document.createElement('button')
         elementTodreate.classList+="btAddTable"
@@ -36,6 +38,7 @@ function AddNewColumn(){
         elementAppend.appendChild(elementTodreate)        
         elementTodreate.innerHTML+="Nome da Coluna: "
         elementTodreate=document.createElement('input')
+        elementTodreate.id="inputTable"+idCol
         elementAppend.appendChild(elementTodreate)
         elementTodreate=document.createElement('button')
         elementTodreate.classList+="btAddTable"
@@ -48,6 +51,30 @@ function AddNewColumn(){
     }
 }
 
+function AddTable(){
+    createdCol=idCol
+    let EmpetyField=false
+    for (let index = 0; index < createdCol; index++){
+        
+        if(document.getElementById("inputTable"+index).value==""){
+            alert("a coluna n°"+(index+2)+" esta vazia, deposite um valor valido!")
+            EmpetyField=true
+            break
+        }
+    }
+    if(EmpetyField==false)
+    {
+    AddColumns(document.getElementById("MainColumn").value)
+    for (let index = 0; index < createdCol; index++){
+        
+        AddColumns(document.getElementById("inputTable"+index).value)
+    }
+    modal.style.display = "none";
+    document.body.style.overflowY="visible"
+    clearDash()
+    }
+}
+
 function clearDash(){
     let getClass
     for (let index = 0; index < idCol; index++) {
@@ -56,8 +83,9 @@ function clearDash(){
         document.getElementById("addColumn01").addEventListener("click",AddNewColumn,false)
         fristUse=true
         getClass.remove()
-        //getClass = document.getElementById("addColumn"+idCol)
     }
+    idCol=0;
 }
 
 element.addEventListener("click",AddNewColumn,false)
+document.getElementById("addTable_bt01").addEventListener("click",AddTable,false)
