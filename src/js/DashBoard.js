@@ -15,7 +15,7 @@ for (let index = 0; index < document.getElementById('dashTable').getElementsByTa
     }
     for (let index = 0; index < document.getElementById('dashTable').getElementsByTagName('th').length; index++){
         input= document.getElementById(IdCode+index)
-        input.value=FieldCell[index]
+        input.value=""
     }
 FieldCell.reverse()
 }
