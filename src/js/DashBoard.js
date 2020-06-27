@@ -1,5 +1,6 @@
 var FieldCell = []
 
+
 function AddLines(IdCode){
 let tableRef = document.getElementById('dashTable').getElementsByTagName('tbody')[0];
 let newRow   = tableRef.insertRow();

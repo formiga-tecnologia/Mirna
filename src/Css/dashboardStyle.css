@@ -129,3 +129,14 @@ footer{
     text-decoration:none;
     background: url(https://img.icons8.com/fluent/48/000000/plus-2-math.png)
 }
+
+/*Warrings and list*/
+#TableNoAdd{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 20vh;
+    font-size: large;
+    color: #53285c;
+    font-family: 'Montserrat', sans-serif;
+}

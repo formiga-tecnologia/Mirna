@@ -64,6 +64,7 @@ function AddTable(){
     }
     if(EmpetyField==false)
     {
+    document.getElementById("TableNoAdd").remove()
     AddColumns(document.getElementById("MainColumn").value)
     for (let index = 0; index < createdCol; index++){
         
