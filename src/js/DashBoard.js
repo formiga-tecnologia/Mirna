@@ -18,10 +18,10 @@ for (let index = 0; index < document.getElementById('dashTable').getElementsByTa
     }
 FieldCell.reverse()
 }
-FieldCell.push("093456")
-FieldCell.push("Quadros")
-FieldCell.push("R$20,00")
-FieldCell.push("4")
-FieldCell.push("9")
-FieldCell.push("03/03/2020")
-AddLines("value")
+
+function AddColumns(ColumnName){
+    let row= document.getElementById("topTable")
+    let thCollum = document.createElement('th')
+    thCollum.innerText=ColumnName
+    let X =  row.appendChild(thCollum)
+}

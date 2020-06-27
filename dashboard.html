@@ -36,43 +36,27 @@
     </nav>
     <div class="dashSheet">
         <table id="dashTable">
-            <tr>
-                <th>Codigo</th>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Saida</th>
-                <th>Entradas</th>
-                <th>Ultima Movimentação</th>
+            <tr id="topTable">
 
             </tr>
-            <tr>
-                <td><input id="cod12" type="text" value="932567"></td>
-                <td><input id="cod13" type="text" value="Livro"></td>
-                <td><input id="cod14" type="text" value="R$50,00"></td>
-                <td><input id="cod15" type="text" value="9"></td>
-                <td><input id="cod16" type="text" value="2"></td>
-                <td><input id="cod17" type="text" value="17/06/2020"></td>
-            </tr>
-            <tr>
-                <td><input id="cod18" type="text" value="934567"></td>
-                <td><input id="cod19" type="text" value="Livro"></td>
-                <td><input id="cod10" type="text" value="R$50,00"></td>
-                <td><input id="cod11" type="text" value="9"></td>
-                <td><input id="cod112" type="text" value="2"></td>
-                <td><input id="cod113" type="text" value="17/06/2020"></td>
-            </tr>
-            <tr>
-                <td><input id="cod114" type="text" value="934567"></td>
-                <td><input id="cod115" type="text" value="Livro"></td>
-                <td><input id="cod116" type="text" value="R$50,00"></td>
-                <td><input id="cod117" type="text" value="9"></td>
-                <td><input id="cod118" type="text" value="2"></td>
-                <td><input id="cod119" type="text" value="17/06/2020"></td>
-            </tr>
-
         </table>
     </div>
     <script src="src\js\DashBoard.js"></script>
+    <script>
+        AddColumns("Codigo")
+        AddColumns("Produto")
+        AddColumns("Valor")
+        AddColumns("Saida")
+        AddColumns("Entrada")
+        AddColumns("Data de Movimentação")
+        FieldCell.push("946281")
+        FieldCell.push("Livro")
+        FieldCell.push("R$80,00")
+        FieldCell.push("4")
+        FieldCell.push("10")
+        FieldCell.push("16/06/2020")
+        AddLines("lines_")
+    </script>
     <footer>
         <div id="optionsPage">
             <ul>
