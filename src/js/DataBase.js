@@ -21,7 +21,7 @@ function CreateSellBase(){
             valueIndex+=1
         }
     testValue+=1
-    console.log("break point")
     }
     SellInfo.reverse()
+    AppendLines+=1
 }
