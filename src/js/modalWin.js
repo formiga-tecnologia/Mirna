@@ -24,6 +24,7 @@ function NewmodelSell(){
   modal.style.display = "none";
   clearDash()
   //Add new  models to set//
+  CreateSellBase()
   document.body.style.overflowY="visible"
   modal = document.getElementById("NewTable");
 }
