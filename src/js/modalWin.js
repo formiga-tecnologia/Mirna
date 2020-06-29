@@ -17,6 +17,7 @@ function NewModelClose(){
   modal.style.display = "none";
   clearDash()
   document.body.style.overflowY="visible"
+  modal = document.getElementById("NewTable");
 }
 function NewmodelSell(){
   modal=document.getElementById("SelectModel")
@@ -24,6 +25,7 @@ function NewmodelSell(){
   clearDash()
   //Add new  models to set//
   document.body.style.overflowY="visible"
+  modal = document.getElementById("NewTable");
 }
 window.onclick = function(event) {
   if (event.target == modal) {
