@@ -1,4 +1,4 @@
-
+//vars locals//
 var modal = document.getElementById("NewTable");
 var btn = document.getElementById("newTable");
 var span = document.getElementsByClassName("close")[0];
