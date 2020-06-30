@@ -1,6 +1,8 @@
 var SellInfo=["563819","Sofa","R$367,00","2","234596","Cadeira","R$76,00","4","123496","Cadeira Redonda","R$267,00","2"]
 var columns=["Codigo","Produto","Preço","Quantidade"]
 
+var SelectCell=[]
+
 function CreateSellBase(){
     let valueIndex=0
     let linesCreated=3

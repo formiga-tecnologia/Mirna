@@ -1,6 +1,7 @@
 var FieldCell = []
 var indexColDash=0
 var selectionBase=true
+var QuerySelection_global=0
 
 function AddLines(IdCode){
 let tableRef = document.getElementById('dashTable').getElementsByTagName('tbody')[0];
@@ -10,6 +11,7 @@ let input
 FieldCell.reverse()
 for (let index = 0; index < document.getElementById('dashTable').getElementsByTagName('th').length; index++) {
     newCell=newRow.insertCell(0)
+    newCell.id=IdCode+"cell"+index
     input=document.createElement("input")
     input.id=IdCode+index
     newCell.appendChild(input)
@@ -34,25 +36,33 @@ function AddColumns(ColumnName){
 
 function SelectLines(){
     let querySelection = this.id
-    let LinesQuant =  document.getElementsByTagName('tr').length-1
-    querySelection = querySelection.replace("col",'')
-    querySelection = (document.getElementsByTagName('th').length-1)-querySelection
-    console.log(querySelection)
     if(selectionBase==true){
+        querySelection = querySelection.replace("col",'')
+        querySelection = (document.getElementsByTagName('th').length-1)-querySelection
         for (let index = 0; index < document.getElementsByTagName('tr').length-1; index++) {
             document.getElementById("RowId"+index+querySelection).style.transition="2s"
             document.getElementById("RowId"+index+querySelection).style.backgroundColor="#680b7a"
             document.getElementById("RowId"+index+querySelection).style.color="white"
+
+            document.getElementById("RowId"+index+"cell"+querySelection).style.transition="2s"
+            document.getElementById("RowId"+index+"cell"+querySelection).style.backgroundColor="#680b7a"
+            document.getElementById("RowId"+index+"cell"+querySelection).style.color="white"
+            SelectCell.push(document.getElementById("RowId"+index+querySelection).value)
         }
         selectionBase=false
+        QuerySelection_global=querySelection
     }
     else{
-        console.log("!")
         for (let index = 0; index < document.getElementsByTagName('tr').length-1; index++) {
-            document.getElementById("RowId"+index+querySelection).style.backgroundColor="#f2f2f2"
-            document.getElementById("RowId"+index+querySelection).style.color="black"
+            SelectCell=[]
+            document.getElementById("RowId"+index+QuerySelection_global).style.backgroundColor="#f2f2f2"
+            document.getElementById("RowId"+index+QuerySelection_global).style.color="black"
+
+            document.getElementById("RowId"+index+"cell"+QuerySelection_global).style.backgroundColor="#f2f2f2"
+            document.getElementById("RowId"+index+"cell"+QuerySelection_global).style.color="white"
         }
         selectionBase=true
     }
+    console.log(SelectCell)
 }
 
