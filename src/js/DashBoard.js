@@ -23,6 +23,12 @@ FieldCell.reverse()
 function AddColumns(ColumnName){
     let row= document.getElementById("topTable")
     let thCollum = document.createElement('th')
+    thCollum.addEventListener("click",SelectLines,false)
     thCollum.innerText=ColumnName
     let X =  row.appendChild(thCollum)
+
+}
+
+function SelectLines(){
+    alert("okay")
 }

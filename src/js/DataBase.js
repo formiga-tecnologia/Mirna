@@ -9,19 +9,18 @@ function CreateSellBase(){
         AddColumns(columns[index])
     }
     for (let index = 0; index < 3; index++) {
-        AddLines("SellReport"+index)   
+        AddLines("RowId"+index)   
     }
 
     SellInfo.reverse()
     let testValue=0
     while(testValue<linesCreated){
         for (let index = 0; index < document.getElementsByTagName("th").length; index++) {
-            document.getElementById("SellReport"+testValue+index).value=SellInfo[valueIndex]
-            console.log("SellReport0"+testValue+" || "+SellInfo[valueIndex])
+            document.getElementById("RowId"+testValue+index).value=SellInfo[valueIndex]
             valueIndex+=1
         }
     testValue+=1
     }
     SellInfo.reverse()
-    AppendLines+=1
+    AppendLines+=3
 }
