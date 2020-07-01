@@ -176,3 +176,30 @@ footer{
 #Md04{
     left: 8vh;
 }
+#DashBarTables{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: #73018a;
+    height: 5vh;
+    width: 157vh;
+    border-radius: 1vh;
+    padding-top: -4vh;
+    padding: 2vh;
+    margin-top: 25vh;
+    margin-left: 20vh;
+}
+.elementsDashBarTables{
+    color: #53285c;
+    background-color: #b98ac2;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2vh;
+    margin-top: -1vh;
+    padding: 2vh;
+    text-align: center;
+}
+.elementsDashBarTables a{
+    color: #53285c;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
