@@ -160,6 +160,10 @@ footer{
     background-color: #53285c;
     color: #b98ac2;
 }
+.ModelOption_Bt a{
+    color: #b98ac2;
+    text-decoration: none;
+}
 #modeloVazio_bt{
     color: #b98ac2;
     text-decoration: none;

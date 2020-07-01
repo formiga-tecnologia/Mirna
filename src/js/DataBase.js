@@ -6,6 +6,7 @@ var SelectCell=[]
 function CreateSellBase(){
     let valueIndex=0
     let linesCreated=3
+    addTables()
     document.getElementById("TableNoAdd").remove()
     for (let index = 0; index < columns.length; index++) {
         AddColumns(columns[index])

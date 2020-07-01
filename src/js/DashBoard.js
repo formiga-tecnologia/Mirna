@@ -34,6 +34,21 @@ function AddColumns(ColumnName){
 
 }
 
+function addTables(){
+    //<div class="elementsDashBarTables"><a href="#">Tabela 1 </a></div>
+    let appendObject= document.getElementById("DashBarTables")
+    let newObject= document.createElement("div")
+    newObject.classList+="elementsDashBarTables"
+    newObject.id="table0"
+    appendObject.appendChild(newObject)
+    newObject=document.createElement("a")
+    newObject.setAttribute("href","#")
+    newObject.innerText+="Tabela de Vendas"
+    //newObject.id="table0"
+    appendObject=document.getElementById("table0")
+    appendObject.appendChild(newObject)
+}
+
 function SelectLines(){
     let querySelection = this.id
     if(selectionBase==true){
