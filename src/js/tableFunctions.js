@@ -3,6 +3,7 @@ var fristUse=true
 var idCol=0
 var createdCol=0
 var AppendLines=0
+var tableCreated=false
 function AddNewColumn(){
     let elementTodreate=document.createElement('div')
     let elementAppend = document.getElementById("bodyModal")
@@ -70,10 +71,9 @@ function AddTable(){
     for (let index = 0; index < createdCol; index++){
         AddColumns(document.getElementById("inputTable"+index).value)
     }
-    AddLines("RowId")
-    AppendLines+=1
     modal.style.display = "none";
     document.body.style.overflowY="visible"
+    tableCreated=true
     clearDash()
     }
 }
@@ -91,7 +91,7 @@ function clearDash(){
 }
 
 function addNewLine(){
-    if(AppendLines>=1){
+    if(AppendLines>=1 || tableCreated==true ){
         AddLines("RowId"+AppendLines)
         AppendLines+=1
     }

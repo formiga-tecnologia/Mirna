@@ -55,6 +55,7 @@ function SelectLines(){
         querySelection = querySelection.replace("col",'')
         querySelection = (document.getElementsByTagName('th').length-1)-querySelection
         for (let index = 0; index < document.getElementsByTagName('tr').length-1; index++) {
+            console.log("RowId"+index+querySelection)
             document.getElementById("RowId"+index+querySelection).style.transition="2s"
             document.getElementById("RowId"+index+querySelection).style.backgroundColor="#680b7a"
             document.getElementById("RowId"+index+querySelection).style.color="white"
