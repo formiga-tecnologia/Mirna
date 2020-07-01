@@ -43,7 +43,7 @@ function addTables(){
     appendObject.appendChild(newObject)
     newObject=document.createElement("a")
     newObject.setAttribute("href","#")
-    newObject.innerText+="Tabela de Vendas"
+    newObject.innerText+="Tabela 1"
     //newObject.id="table0"
     appendObject=document.getElementById("table0")
     appendObject.appendChild(newObject)

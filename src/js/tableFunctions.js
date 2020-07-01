@@ -66,7 +66,10 @@ function AddTable(){
     }
     if(EmpetyField==false)
     {
-    document.getElementById("TableNoAdd").remove()
+        if(tableCreated==false)
+        {
+            document.getElementById("TableNoAdd").remove()
+        }
     AddColumns(document.getElementById("MainColumn").value)
     for (let index = 0; index < createdCol; index++){
         AddColumns(document.getElementById("inputTable"+index).value)
@@ -74,6 +77,7 @@ function AddTable(){
     modal.style.display = "none";
     document.body.style.overflowY="visible"
     tableCreated=true
+    addTables()
     clearDash()
     }
 }
