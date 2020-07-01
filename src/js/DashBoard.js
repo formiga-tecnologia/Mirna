@@ -2,6 +2,7 @@ var FieldCell = []
 var indexColDash=0
 var selectionBase=true
 var QuerySelection_global=0
+var tablesCreated =0
 
 function AddLines(IdCode){
 let tableRef = document.getElementById('dashTable').getElementsByTagName('tbody')[0];
@@ -39,14 +40,15 @@ function addTables(){
     let appendObject= document.getElementById("DashBarTables")
     let newObject= document.createElement("div")
     newObject.classList+="elementsDashBarTables"
-    newObject.id="table0"
+    newObject.id="table"+tablesCreated
     appendObject.appendChild(newObject)
     newObject=document.createElement("a")
     newObject.setAttribute("href","#")
     newObject.innerText+="Tabela 1"
     //newObject.id="table0"
-    appendObject=document.getElementById("table0")
+    appendObject=document.getElementById("table"+tablesCreated)
     appendObject.appendChild(newObject)
+    tablesCreated+=1
 }
 
 function SelectLines(){

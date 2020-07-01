@@ -183,7 +183,6 @@ footer{
 #DashBarTables{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: auto;
     background-color: #73018a;
     height: 5vh;
@@ -202,6 +201,7 @@ footer{
     margin-top: -1vh;
     padding: 2vh;
     text-align: center;
+    margin-left: 3vh;
 }
 .elementsDashBarTables a{
     color: white;
