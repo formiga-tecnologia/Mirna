@@ -114,6 +114,13 @@ function addNewLine(){
     }
 }
 
+function updateTable(){
+    //Adicionar aqui as condições para atualizar a tabela
+    //Isso para gravar em uma Array.
+    console.log("Saiu da tabela mane")
+}
+
 element.addEventListener("click",AddNewColumn,false)
 document.getElementById("addTable_bt01").addEventListener("click",AddTable,false)
 document.getElementById("addLine").addEventListener("click",addNewLine,false)
+document.getElementById("TableNoAdd").addEventListener("mouseout",updateTable,false)
