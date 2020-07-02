@@ -44,7 +44,9 @@ function addTables(){
     appendObject.appendChild(newObject)
     newObject=document.createElement("a")
     newObject.setAttribute("href","#")
+    newObject.id="table"+tableCreated
     newObject.innerText+="Tabela 1"
+    //Para extrair o valor é so usar  let x = newObject.id.replace("tabela","")
     //newObject.id="table0"
     appendObject=document.getElementById("table"+tablesCreated)
     appendObject.appendChild(newObject)
