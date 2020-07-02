@@ -1,10 +1,10 @@
 class DataClass{
     constructor(NameData,Columns,Inputs){
-        nameTable=NameData
-        ColumnsData = Columns
-        InputsValue = Inputs
+        this.NameData=NameData
+        this.Columns=Columns
+        this.Input=Inputs
     }
     showData(){
-        console.log(this.nameTable)
+        console.log(this.NameData)
     }
 }

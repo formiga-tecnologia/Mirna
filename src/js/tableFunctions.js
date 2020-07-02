@@ -56,8 +56,12 @@ function AddNewColumn(){
 function AddTable(){
     createdCol=idCol
     let EmpetyField=false
+    if(document.getElementById("MainColumn").value==""){
+        alert("a coluna n° 1 esta vazia, deposite um valor valido!")
+        EmpetyField=true
+    }
     for (let index = 0; index < createdCol; index++){
-        
+
         if(document.getElementById("inputTable"+index).value==""){
             alert("a coluna n°"+(index+2)+" esta vazia, deposite um valor valido!")
             EmpetyField=true
