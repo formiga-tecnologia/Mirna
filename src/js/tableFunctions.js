@@ -4,6 +4,7 @@ var idCol=0
 var createdCol=0
 var AppendLines=0
 var tableCreated=false
+var TablesOptions=[]
 function AddNewColumn(){
     let elementTodreate=document.createElement('div')
     let elementAppend = document.getElementById("bodyModal")
@@ -83,6 +84,9 @@ function AddTable(){
     tableCreated=true
     addTables()
     clearDash()
+    let a = new DataClass("Name01","Colunas01","Inputs","Tabela Nova")
+    TablesOptions.push(a)
+    TablesOptions[0].showData()
     }
 }
 
