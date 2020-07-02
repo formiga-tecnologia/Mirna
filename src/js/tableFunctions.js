@@ -56,6 +56,8 @@ function AddNewColumn(){
 
 function AddTable(){
     createdCol=idCol
+    let a = new DataClass("Name01","Colunas01","Inputs","Tabela Nova")
+    TablesOptions.push(a)
     let EmpetyField=false
     if(document.getElementById("MainColumn").value==""){
         alert("a coluna n° 1 esta vazia, deposite um valor valido!")
@@ -76,17 +78,17 @@ function AddTable(){
             document.getElementById("TableNoAdd").remove()
         }
     AddColumns(document.getElementById("MainColumn").value)
+    TablesOptions[tablesCreated].ColumnsData.push(document.getElementById("MainColumn").value)
     for (let index = 0; index < createdCol; index++){
         AddColumns(document.getElementById("inputTable"+index).value)
+        TablesOptions[tablesCreated].ColumnsData.push(document.getElementById("inputTable"+index).value)
     }
+    console.log(TablesOptions[tablesCreated].ColumnsData)
     modal.style.display = "none";
     document.body.style.overflowY="visible"
     tableCreated=true
     addTables()
     clearDash()
-    let a = new DataClass("Name01","Colunas01","Inputs","Tabela Nova")
-    TablesOptions.push(a)
-    TablesOptions[0].showData()
     }
 }
 
