@@ -119,6 +119,10 @@ function updateTable(){
     //Isso para gravar em uma Array.
     console.log("Saiu da tabela mane")
     //Add aqui nas atualizações da tabela
+    let ColCount = document.getElementsByTagName('th').length
+    for (let index = 0; index < ColCount; index++) {
+        console.log("count times")
+    }
 }
 
 element.addEventListener("click",AddNewColumn,false)
