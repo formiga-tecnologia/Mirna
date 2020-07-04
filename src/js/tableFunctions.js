@@ -118,6 +118,7 @@ function updateTable(){
     //Adicionar aqui as condições para atualizar a tabela
     //Isso para gravar em uma Array.
     console.log("Saiu da tabela mane")
+    //Add aqui nas atualizações da tabela
 }
 
 element.addEventListener("click",AddNewColumn,false)
