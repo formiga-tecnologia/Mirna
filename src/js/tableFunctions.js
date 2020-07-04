@@ -128,4 +128,4 @@ function updateTable(){
 element.addEventListener("click",AddNewColumn,false)
 document.getElementById("addTable_bt01").addEventListener("click",AddTable,false)
 document.getElementById("addLine").addEventListener("click",addNewLine,false)
-document.getElementById("TableNoAdd").addEventListener("mouseout",updateTable,false)
+document.getElementById("dashSheet").addEventListener("mouseout",updateTable,false)
