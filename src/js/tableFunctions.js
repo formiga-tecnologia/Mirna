@@ -127,6 +127,7 @@ function updateTable(){
             AddCells.push("||")
     }
     console.log(AddCells)
+    AddCells=[]
 }
 
 element.addEventListener("click",AddNewColumn,false)
