@@ -5,6 +5,7 @@ var createdCol=0
 var AppendLines=0
 var tableCreated=false
 var TablesOptions=[]
+var AddCells=[]
 function AddNewColumn(){
     let elementTodreate=document.createElement('div')
     let elementAppend = document.getElementById("bodyModal")
@@ -115,20 +116,17 @@ function addNewLine(){
 }
 
 function updateTable(){
-    //Adicionar aqui as condições para atualizar a tabela
-    //Isso para gravar em uma Array.
     console.log("Saiu da tabela mane")
-    //Add aqui nas atualizações da tabela
     let ColCount = document.getElementsByTagName('th').length-1
     let colectCell = document.getElementsByTagName('tr').length
-    let el
         //Coletar o que cada linha faz//
         for (let indexLayer = 0; indexLayer < ColCount; indexLayer++) {
             for (let index = 1; index < colectCell; index++) {
-                el = document.getElementById("RowId"+indexLayer+index)
-                console.log(el.value)
+                AddCells.push(document.getElementById("RowId"+indexLayer+index).value)
             }   
+            AddCells.push("||")
     }
+    console.log(AddCells)
 }
 
 element.addEventListener("click",AddNewColumn,false)
