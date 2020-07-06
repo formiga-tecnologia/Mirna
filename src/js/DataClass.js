@@ -5,8 +5,4 @@ class DataClass{
         this.Input=Inputs
         this.TableName = TableName
     }
-    showData(){
-        console.log(this.NameData)
-        console.log(this.TableName)
-    }
 }
