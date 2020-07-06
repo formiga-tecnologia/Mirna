@@ -119,16 +119,15 @@ function updateTable(){
     //Isso para gravar em uma Array.
     console.log("Saiu da tabela mane")
     //Add aqui nas atualizações da tabela
-    let ColCount = document.getElementsByTagName('th').length
+    let ColCount = document.getElementsByTagName('th').length-1
     let colectCell = document.getElementsByTagName('tr').length
     let el
-    for (let index = 0; index < ColCount; index++) {
-        console.log("count times")
         //Coletar o que cada linha faz//
-        for (let index = 0; index < colectCell; index++) {
-            el = document.getElementById("RowId0cell"+index)
-            console.log(el.value)
-        }
+        for (let indexLayer = 0; indexLayer < ColCount; indexLayer++) {
+            for (let index = 1; index < colectCell; index++) {
+                el = document.getElementById("RowId"+indexLayer+index)
+                console.log(el.value)
+            }   
     }
 }
 
