@@ -120,8 +120,15 @@ function updateTable(){
     console.log("Saiu da tabela mane")
     //Add aqui nas atualizações da tabela
     let ColCount = document.getElementsByTagName('th').length
+    let colectCell = document.getElementsByTagName('tr').length
+    let el
     for (let index = 0; index < ColCount; index++) {
         console.log("count times")
+        //Coletar o que cada linha faz//
+        for (let index = 0; index < colectCell; index++) {
+            el = document.getElementById("RowId0cell"+index)
+            console.log(el.value)
+        }
     }
 }
 
