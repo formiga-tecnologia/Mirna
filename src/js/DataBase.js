@@ -14,7 +14,8 @@ function CreateSellBase(){
     for (let index = 0; index < 3; index++) {
         AddLines("RowId"+index)   
     }
-
+    let Data=new DataClass("Data",columns,SellInfo,"Table01")
+    AddTableMirna(Data)
     SellInfo.reverse()
     let testValue=0
     while(testValue<linesCreated){

@@ -1,5 +1,4 @@
 class DataClass{
-    ColumnsData=[]
     constructor(NameData,Columns,Inputs,TableName){
         this.NameData=NameData
         this.Columns=Columns

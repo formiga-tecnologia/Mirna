@@ -57,7 +57,6 @@ function AddNewColumn(){
 
 function AddTable(){
     createdCol=idCol
-    let a = new DataClass("Name01","Colunas01","Inputs","Tabela Nova")
     TablesOptions.push(a)
     let EmpetyField=false
     if(document.getElementById("MainColumn").value==""){
@@ -116,14 +115,14 @@ function addNewLine(){
 }
 
 function updateTable(){
-    console.log("Saiu da tabela mane")
     let ColCount = document.getElementsByTagName('th').length-1
     let colectCell = document.getElementsByTagName('tr').length
         //Coletar o que cada linha faz//
         for (let indexLayer = 0; indexLayer < ColCount; indexLayer++) {
-            for (let index = 1; index < colectCell; index++) {
+            for (let index = 0; index < colectCell; index++) {
                 AddCells.push(document.getElementById("RowId"+indexLayer+index).value)
-            }   
+            }
+            AddCells.reverse()   
             AddCells.push("||")
     }
     console.log(AddCells)
