@@ -57,7 +57,6 @@ function AddNewColumn(){
 
 function AddTable(){
     createdCol=idCol
-    TablesOptions.push(a)
     let EmpetyField=false
     if(document.getElementById("MainColumn").value==""){
         alert("a coluna n° 1 esta vazia, deposite um valor valido!")
@@ -78,12 +77,9 @@ function AddTable(){
             document.getElementById("TableNoAdd").remove()
         }
     AddColumns(document.getElementById("MainColumn").value)
-    TablesOptions[tablesCreated].ColumnsData.push(document.getElementById("MainColumn").value)
     for (let index = 0; index < createdCol; index++){
         AddColumns(document.getElementById("inputTable"+index).value)
-        TablesOptions[tablesCreated].ColumnsData.push(document.getElementById("inputTable"+index).value)
     }
-    console.log(TablesOptions[tablesCreated].ColumnsData)
     modal.style.display = "none";
     document.body.style.overflowY="visible"
     tableCreated=true
@@ -115,18 +111,21 @@ function addNewLine(){
 }
 
 function updateTable(){
-    let ColCount = document.getElementsByTagName('th').length-1
-    let colectCell = document.getElementsByTagName('tr').length
+    let ColCount = document.getElementsByTagName('th').length
+    let colectCell = document.getElementsByTagName('tr').length-2
         //Coletar o que cada linha faz//
-        for (let indexLayer = 0; indexLayer < ColCount; indexLayer++) {
-            for (let index = 0; index < colectCell; index++) {
-                AddCells.push(document.getElementById("RowId"+indexLayer+index).value)
-            }
-            AddCells.reverse()   
-            AddCells.push("||")
-    }
-    console.log(AddCells)
-    AddCells=[]
+        if(colectCell>1){
+            for (let indexLayer = 0; indexLayer < ColCount; indexLayer++) {
+                for (let index = 0; index < colectCell; index++) {
+                    AddCells.push(document.getElementById("RowId"+indexLayer+index).value)
+                }
+                AddCells.reverse()   
+                AddCells.push("||")
+        }
+        console.log(AddCells)
+        AddCells=[]
+        }
+
 }
 
 element.addEventListener("click",AddNewColumn,false)
