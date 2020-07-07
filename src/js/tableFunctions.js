@@ -112,12 +112,14 @@ function addNewLine(){
 
 function updateTable(){
     let ColCount = document.getElementsByTagName('th').length
-    let colectCell = document.getElementsByTagName('tr').length-2
+    let colectCell = document.getElementsByTagName('td').length
         //Coletar o que cada linha faz//
         if(colectCell>1){
             for (let indexLayer = 0; indexLayer < ColCount; indexLayer++) {
-                for (let index = 0; index < colectCell; index++) {
-                    AddCells.push(document.getElementById("RowId"+indexLayer+index).value)
+                for (let index = 0; index < AppendLines; index++) {
+                    //Parei aqui bug  para leitura do numero de linhas 
+                    console.log(document.getElementById("RowId"+indexLayer+index))
+                   AddCells.push(document.getElementById("RowId"+indexLayer+index).value)
                 }
                 AddCells.reverse()   
                 AddCells.push("||")
